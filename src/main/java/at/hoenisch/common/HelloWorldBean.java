@@ -8,7 +8,7 @@ import javax.faces.context.FacesContext;
 import java.io.Serializable;
 
 /**
- * Created by Philipp Hoenisch, Senacor on 09/04/16.
+ * Created by Philipp Hoenisch on 09/04/16.
  */
 @ManagedBean
 @SessionScoped

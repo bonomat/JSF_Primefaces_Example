@@ -5,6 +5,9 @@ import javax.faces.bean.SessionScoped;
 
 import java.io.Serializable;
 
+/**
+ * Created by Philipp Hoenisch on 09/04/16.
+ */
 @ManagedBean
 @SessionScoped
 public class HelloBean implements Serializable {
