@@ -1,24 +1,37 @@
 package at.hoenisch.filter;
 
+import at.hoenisch.models.AuditEntry;
+import at.hoenisch.models.AuditGraph;
+
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Created by Philipp Hoenisch, Senacor on 09/04/16.
+ * Created by Philipp Hoenisch on 09/04/16.
  */
 @Named
 @SessionScoped
 public class AuditFilterController implements Serializable {
-    private List<String> responses = new ArrayList<>();
 
-    public void addRequest(Long id, String type, String content) {
-        responses.add(content);
+    private AuditGraph auditGraph;
+
+    public void addAuditGraph(AuditGraph auditGraph) {
+        this.auditGraph = auditGraph;
     }
 
-    public List<String> getResponses() {
-        return responses;
+    public void addAuditEntry(AuditEntry auditEntry) {
+        if (auditGraph == null) {
+            auditGraph = new AuditGraph();
+        }
+        if (auditEntry.isAjaxUpdate()) {
+            AuditEntry lastEntry = auditGraph.getLastEntry();
+            if (lastEntry != null) {
+                lastEntry.setChild(auditEntry);
+                auditEntry.setParent(lastEntry);
+            }
+        }
+
+        auditGraph.addEntry(auditEntry);
     }
 }
