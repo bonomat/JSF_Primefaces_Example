@@ -1,28 +1,29 @@
 package at.hoenisch.models;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 /**
  * Created by Philipp Hoenisch on 11/04/16.
  */
 public class AuditGraph implements Serializable {
 
-    private List<AuditEntry> auditEntries;
+    private LinkedList<AuditEntry> m_auditEntries;
 
     public AuditGraph() {
-        auditEntries = new ArrayList<>();
+        m_auditEntries = new LinkedList<>();
     }
 
     public void addEntry(AuditEntry auditEntry) {
-        auditEntries.add(auditEntry);
+        m_auditEntries.add(auditEntry);
     }
 
     public AuditEntry getLastEntry() {
-        if (auditEntries.size() > 0) {
-            return auditEntries.get(auditEntries.size() - 1);
+        try {
+            return m_auditEntries.getLast();
+        } catch (NoSuchElementException ex) {
+            return null;
         }
-        return null;
     }
 }
