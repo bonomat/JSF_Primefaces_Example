@@ -2,6 +2,7 @@ package at.hoenisch.filter;
 
 import at.hoenisch.filter.helpers.HttpServletResponseCopier;
 import at.hoenisch.models.AuditEntry;
+import org.apache.commons.io.IOUtils;
 import org.omnifaces.filter.HttpFilter;
 
 import javax.inject.Inject;
