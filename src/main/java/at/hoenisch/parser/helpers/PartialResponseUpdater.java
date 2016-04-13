@@ -8,6 +8,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+import org.xml.sax.SAXParseException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -27,7 +28,13 @@ public class PartialResponseUpdater {
      * @throws Exception
      */
     public static Document updatePage(Document currentPage, String partialResponse) throws Exception {
-        org.w3c.dom.Document partialUpdate = loadXMLFromString(partialResponse);
+        org.w3c.dom.Document partialUpdate;
+        try {
+            partialUpdate = loadXMLFromString(partialResponse);
+        } catch (SAXParseException exception) {
+            System.err.println("could not parse partial response");
+            return currentPage;
+        }
         NodeList update = partialUpdate.getElementsByTagName("update");
         for (int i = 0; i < update.getLength(); i++) {
             Node item = update.item(i);
