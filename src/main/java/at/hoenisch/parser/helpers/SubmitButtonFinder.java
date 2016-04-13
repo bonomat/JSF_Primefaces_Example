@@ -12,6 +12,8 @@ import java.util.List;
  * Created by Philipp Hoenisch on 13/04/16.
  */
 public class SubmitButtonFinder {
+
+
     public static Element find(Document currentPage, String formId, String sourceId) throws ElementNotFoundException {
         Element form = currentPage.getElementById(formId);
 

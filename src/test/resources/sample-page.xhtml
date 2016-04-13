@@ -1,0 +1,607 @@
+<!--?xml version="1.0" encoding="UTF-8"?--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>GATE - PHOENIS - LOCALHOST - </title>
+    <link type="text/css" rel="stylesheet" href="/salesfrontend/javax.faces.resource/theme.css?ln=css&amp;v=16_02_0">
+    <link type="text/css" rel="stylesheet" href="/salesfrontend/javax.faces.resource/clock/clock.css?ln=primefaces&amp;v=4.0.19">
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/jquery/jquery.js?ln=primefaces&amp;v=4.0.19"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/primefaces.js?ln=primefaces&amp;v=4.0.19"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/clock/clock.js?ln=primefaces&amp;v=4.0.19"></script>
+    <link type="text/css" rel="stylesheet" href="/salesfrontend/javax.faces.resource/primefaces.css?ln=primefaces&amp;v=4.0.19">
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/jquery/jquery-plugins.js?ln=primefaces&amp;v=4.0.19"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/primefaces-extensions.js?ln=primefaces-extensions-uncompressed&amp;v=1.2.1"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/keyfilter/keyfilter.js?ln=primefaces-extensions-uncompressed&amp;v=1.2.1"></script>
+    <link type="text/css" rel="stylesheet" href="/salesfrontend/javax.faces.resource/watermark/watermark.css?ln=primefaces&amp;v=4.0.19">
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/watermark/watermark.js?ln=primefaces&amp;v=4.0.19"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/salesfrontend.js?ln=js&amp;v=16_02_0"></script>
+    <script type="text/javascript" src="/salesfrontend/javax.faces.resource/moment.min.js?ln=js&amp;v=16_02_0"></script>
+    <!--[if lte IE 8]><link type='text/css' rel='stylesheet' href='/salesfrontend/javax.faces.resource/css/ie8fix.css' media='screen' /><![endif]-->
+</head>
+<body class="bawagtheme desktop" onload="window.projectstage = 'Development'">
+<script type="text/javascript">
+    var WAIT_TIME_IN_MS = 500;
+
+    function openLink(url, target) {
+        var params = [
+            'top=0',
+            'left=0',
+            'scrollbars=yes',
+            'resizable=yes',
+            'menubar=no',
+            'toolbar=no',
+            'status=no',
+            'location=no'
+        ].join(',');
+        var newWindow = window.open('', target, params);
+        if (newWindow) {
+            newWindow.resizeTo(screen.availWidth, screen.availHeight);
+            newWindow.location = url;
+            newWindow.focus();
+            setTimeout(function () {
+                if(newWindow) {
+                    newWindow.focus();
+                }
+            }, WAIT_TIME_IN_MS);
+        }
+    }
+</script>
+<div id="j_idt10" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-north">
+    <div class="ui-layout-unit-content ui-widget-content">
+        <div id="topnavigation" class="topnavigation">
+            <span id="j_idt12" class="ui-clock ui-widget ui-widget-header ui-corner-all"></span>
+            <script id="j_idt12_s" type="text/javascript">PrimeFaces.cw('Clock','widget_j_idt12',{id:'j_idt12',mode:'client',pattern:'dd.MM.yyyy | HH:mm',locale:'de_AT'});</script>
+            <div id="j_idt13" class="ui-tabmenu ui-widget ui-widget-content ui-corner-all">
+                <ul class="ui-tabmenu-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+                    <li class="ui-tabmenuitem ui-state-default ui-state-active ui-corner-top" role="tab" aria-expanded="true"><a tabindex="-1" class="ui-menuitem-link ui-corner-all ui-state-disabled" href="#" onclick="return false;"><span class="ui-menuitem-text">GATE</span></a></li>
+                    <li class="ui-tabmenuitem ui-state-default ui-corner-top" role="tab" aria-expanded="false"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://nzbkdt02/bkde_u7/Framework/Login.aspx" target="mm_window"><span class="ui-menuitem-text">Marketing Manager</span></a></li>
+                </ul>
+            </div>
+            <script id="j_idt13_s" type="text/javascript">PrimeFaces.cw('TabMenu','widget_j_idt13',{id:'j_idt13'});</script>
+        </div>
+        <div id="j_idt17" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt17">
+            <div id="j_idt17_content" class="ui-panel-content ui-widget-content">
+                <div class="logo_wrapper">
+                    <img src="/salesfrontend/javax.faces.resource/bawag_logo.jpg?ln=images">
+                    <div id="j_idt20"></div>
+                    <script id="j_idt20_s" type="text/javascript">$(function(){PrimeFaces.cw('AjaxStatus','widget_j_idt20',{id:'j_idt20',start:function(){PF('statusDialog').show();},success:function(){PF('statusDialog').hide();}});});</script>
+                    <div id="ajaxStatus" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow ajaxStatus" style="position: fixed">
+                        <div class="ui-dialog-content ui-widget-content">
+                            <img id="j_idt21" src="/salesfrontend/javax.faces.resource/progress.gif?ln=images" alt="">
+                        </div>
+                    </div>
+                    <script id="ajaxStatus_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','statusDialog',{id:'ajaxStatus',draggable:false,modal:true,appendTo:'@(body)'});});</script>
+                    <div id="ajaxStatusNonModal" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow ajaxStatus" style="position: fixed">
+                        <div class="ui-dialog-content ui-widget-content">
+                            <img id="j_idt22" src="/salesfrontend/javax.faces.resource/progress.gif?ln=images" alt="">
+                        </div>
+                    </div>
+                    <script id="ajaxStatusNonModal_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','statusDialogNonModal',{id:'ajaxStatusNonModal',draggable:false,appendTo:'@(body)'});});</script>
+                    <div id="berater_name" class="advisorName">
+                        Tester Muster
+                    </div>
+                    <div id="berater_nummer" class="advisorNmbr">
+                        (phoenis)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="j_idt17_s" type="text/javascript">PrimeFaces.cw('Panel','widget_j_idt17',{id:'j_idt17'});</script>
+    </div>
+</div>
+<div id="j_idt28" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-center">
+    <div class="ui-layout-unit-content ui-widget-content">
+        <div id="body" class="clearfix">
+            <div class="menuArea">
+                <div class="overlayToDisableNav"></div>
+                <form id="menuBarForm" name="menuBarForm" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+                    <input type="hidden" name="menuBarForm" value="menuBarForm">
+                    <div id="menuBarForm:j_idt30" class="ui-menu ui-menubar ui-widget ui-widget-content ui-corner-all ui-helper-clearfix" role="menubar">
+                        <div tabindex="0" class="ui-helper-hidden-accessible"></div>
+                        <ul class="ui-menu-list ui-helper-reset">
+                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all ui-state-active ui-state-disabled" href="#" onclick="return false;"><span class="ui-menuitem-text">Arbeitsplatz</span></a></li>
+                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="/salesfrontend/advisory/advisoryStart.xhtml"><span class="ui-menuitem-text">Meine L?sung</span></a></li>
+                            <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Tools</span><span class="ui-icon ui-icon-triangle-1-s"></span></a>
+                                <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://nzwfm001.bawag.com:8080/SES/web" target="wfm_window"><span class="ui-menuitem-text">Workforcemanagement-Tool</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://nznot026.bawag.com/dbcatalog.nsf?OpenDatabase&amp;amp;119062070076087090104" target="mail_window"><span class="ui-menuitem-text">Web-Portal Mailaccount</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://nznot006.bawag.com/app/ebankingkundenmails.nsf" target="mail_window"><span class="ui-menuitem-text">eBanking Kundenmails</span></a></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Telefonbuch</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://nznot026.bawag.com/app/formular/lsaorga.nsf?OpenDatabase&amp;amp;ui=webmail" target="pb_window"><span class="ui-menuitem-text">Internes Telefonbuch</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://www.herold.at" target="pb_window"><span class="ui-menuitem-text">Externes Telefonbuch</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Vertriebsplattform</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/" target="vp_window"><span class="ui-menuitem-text">Startseite</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/Formulare/43406/aushaenge.html" target="vp_window"><span class="ui-menuitem-text">Formulare</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/Produkte" target="vpf_window"><span class="ui-menuitem-text">Produkte</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Wertpapier</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://www.bawagpsk.com/saas.fonds/Ansparrechner.html" target="fs_window"><span class="ui-menuitem-text">Fondsparrechner</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">BAWAG PSK Versicherung</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://onlineservices.bawag.com/VorsorgeBawag/Vorsorge/Vorsorge.html" target="pg_window"><span class="ui-menuitem-text">Pensionsl?ckenrechner</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://www.leasing.at/go4lease" target="l_window"><span class="ui-menuitem-text">BAWAG PSK Leasing</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://nznot026.bawag.com/app/aufrufwuestenrot.nsf?OpenDatabase&amp;amp;ui=webmail" target="wr_window"><span class="ui-menuitem-text">W?stenrot Bausparen</span></a></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Sparrechner</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://www.bawagpsk.com/BAWAGPSK/PK/Rechner/124336/ueb-sparrechnervariabel.html" target="sc_window"><span class="ui-menuitem-text">Sparrechner variable</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://www.bawagpsk.com/BAWAGPSK/PK/Rechner/124330/ueb-sparrechner-fixe-verzinsung.html" target="sc_window"><span class="ui-menuitem-text">Sparrechner fix</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Kredit</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://www.bawagpsk.com/saas.kredit.bawag/Kredit.html" target="lc_window"><span class="ui-menuitem-text">Kreditrechner</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/linkableblob/VP/81712/8/kredituebernahmeservice-tool-data.xls" target="las_window"><span class="ui-menuitem-text">Kredit?bernahmeservice</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://finonline-bawagpsk.at/" target="fo_window"><span class="ui-menuitem-text">FINOnline</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://intern.bawag.com/loantracking/retailbranch/welcome.html" target="lt_window"><span class="ui-menuitem-text">Loan-Tracking</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://nznot016.bawag.com/app/LB/LB.nsf?OpenDatabase&amp;amp;119062069079088099100" target="ic_window"><span class="ui-menuitem-text">Liegenschaftsbewertung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://onlinerechner.haude.at/bmf/brutto-netto-rechner.html" target="bnc_window"><span class="ui-menuitem-text">Brutto-Netto-Rechner</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Register</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://daten.compass.at/FirmenCompass/?PageID=DTFK51&amp;amp;PageID=DTFK51" target="bb_window"><span class="ui-menuitem-text">Firmenbuch</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://daten.compass.at/GrundbuchCompass/?PageID=DTFK51&amp;amp;PageID=DTFK51" target="ib_window"><span class="ui-menuitem-text">Grundbuch</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://daten.compass.at/MeldeCompass/Search?PageID=DTFK51" target="pr_window"><span class="ui-menuitem-text">Melderegister</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">KOVIS</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://nzkov002.bawag.com/bct/bctb_index.asp?sid=D4AC5290-EE6B-4316-9561-3519090CC049-373692840" target="kv_window"><span class="ui-menuitem-text">KOVIS-Barcode</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://nzkov002.bawag.com/kovp/kov/getapp.asp" target="kv_window"><span class="ui-menuitem-text">KOVIS-Intranet</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://ebanking.bawagpsk.com/InternetBanking/InternetBanking?d=login&amp;amp;svc=BAWAG&amp;amp;ui=html&amp;amp;lang=de" target="eb_window"><span class="ui-menuitem-text">BAWAG PSK eBanking</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="https://www.bawagpsk.com/saas.wechselkursrechner.bawag/Wechselkursrechner.html" target="ex_window"><span class="ui-menuitem-text">Wechselkursrechner</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://bafp.bawag.com/lernportal/" target="vip_window"><span class="ui-menuitem-text">viP - virtuelles Lernportal</span></a></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">GATE - Infos</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/Arbeitshandbuecher/144000/gate-ahb.html" target="gi_window"><span class="ui-menuitem-text">Arbeitshandb?cher - GATE</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/Kunden_Verkauf/GATE/133752/aktuelles.html" target="gi_window"><span class="ui-menuitem-text">Kunden und Verkauf - GATE</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="http://vertriebsplattform.bawagpsk.com/VP/DE/Kunden_Verkauf/GATE/145248/gate-faqs.html" target="gi_window"><span class="ui-menuitem-text">FAQs - GATE</span></a></li>
+                                        </ul></li>
+                                </ul></li>
+                            <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent " role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Administration</span><span class="ui-icon ui-icon-triangle-1-s"></span></a>
+                                <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Autorisierung</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_0_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">4-Augen Autorisierung</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Allgemein</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Infotexte f?r Vergaberichtlinien</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Berechnung des Abdeckungsbetrags</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_2'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Promotion-Code-Vertriebswege</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_3'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Konfigurationseintr?ge</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_4'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Vergaberichtlinien CSV-Upload</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_5'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Mindestwerte Vergaberichtlinien</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_6'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Vorkredite Blacklist</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_7'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Abbruchdialog-Haushaltsrechnung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_1_8'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Umschichtungskonfiguration</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Produktkonfiguration</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_2_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Allgemeine Einstellungen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_2_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Vorschlagsseite</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_2_2'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Dokumente</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Boxenkonfiguration</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_3_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Allgemeine Einstellungen</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Frageb?ume</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_4_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Frageb?ume Produktscoring</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_4_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Allgemeine Einstellungen</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Berechtigungen</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Active Directory Gruppen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Rollen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_2'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Gruppen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_3'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Rollen zu Active Directory Gruppen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_4'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Gruppen zu Rollen</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_5_5'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Befugnisse zu Gruppe</span></a></li>
+                                        </ul></li>
+                                    <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Portfolios und allgemeine Daten</span><span class="ui-icon ui-icon-triangle-1-e"></span></a>
+                                        <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Scorematrix</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Produktgruppen Zuordnung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_2'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Laufzeitenb?nder</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_3'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Performanceerwartung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_4'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Aktienquote</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_5'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Titelverwaltung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_6'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Titelanzeigeverwaltung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_7'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Musterportfolios</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_8'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Prod.gruppe Finanzierung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_9'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Prod.gruppe Versicherung</span></a></li>
+                                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',global:false,partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'3_6_10'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Prod.gruppe Sparen &amp; Bausparen</span></a></li>
+                                        </ul></li>
+                                </ul></li>
+                            <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="/salesfrontend/status/status.xhtml"><span class="ui-menuitem-text">Status</span></a></li>
+                            <li class="ui-widget ui-menuitem ui-corner-all ui-menu-parent" role="menuitem" aria-haspopup="true"><a href="#" class="ui-menuitem-link ui-submenu-link ui-corner-all" tabindex="-1"><span class="ui-menuitem-text">Hilfe</span><span class="ui-icon ui-icon-triangle-1-s"></span></a>
+                                <ul class="ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow" role="menu">
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',partialSubmit:true,params:[{name:'menuBarForm:j_idt30_menuid',value:'5_0'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Hilfe</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'brokerDialog',partialSubmit:true,oncomplete:function(xhr,status,args){PF('brokerDlg').show();;},params:[{name:'menuBarForm:j_idt30_menuid',value:'5_1'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Vermittlerdaten</span></a></li>
+                                    <li class="ui-menuitem ui-widget ui-corner-all" role="menuitem"><a tabindex="-1" class="ui-menuitem-link ui-corner-all" href="#" onclick="PrimeFaces.ab({source:'menuBarForm:j_idt30',process:'menuBarForm:j_idt30',update:'menuBarForm:j_idt30',partialSubmit:true,oncomplete:function(xhr,status,args){PF('profitCenterDlg').show();;},params:[{name:'menuBarForm:j_idt30_menuid',value:'5_2'}],formId:'menuBarForm'});return false;"><span class="ui-menuitem-text">Profitcenter</span></a></li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                    <script id="menuBarForm:j_idt30_s" type="text/javascript">PrimeFaces.cw('Menubar','widget_menuBarForm_j_idt30',{id:'menuBarForm:j_idt30',autoDisplay:false});</script>
+                    <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                </form>
+                <div id="customerTab">
+                    <div class="ibanwrap">
+                        <form id="ibanSearchFieldsForm" name="ibanSearchFieldsForm" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded" onkeypress="if (event.keyCode == 13) {                document.getElementById('ibanSearchFieldsForm:ibanSearchRequest:ibanSearch').focus();                document.getElementById('ibanSearchFieldsForm:ibanSearchRequest:ibanSearch').click();                return false; }">
+                            <input type="hidden" name="ibanSearchFieldsForm" value="ibanSearchFieldsForm">
+                            <div id="ibanSearchFieldsForm:ibanSearchRequest">
+                                <div id="ibanSearchFieldsForm:ibanSearchRequest:accountNumberSearchCriteriaPanel" style="">
+                                    <span id="ibanSearchFieldsForm:ibanSearchRequest:kundensuchetxt1" class="ibantxt">Kundensuche (IBAN):</span>
+                                    <span class="attxt">AT</span>
+                                    <input id="ibanSearchFieldsForm:ibanSearchRequest:checksum" name="ibanSearchFieldsForm:ibanSearchRequest:checksum" type="text" maxlength="2" tabindex="2000" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all pz">
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:checksum_s" type="text/javascript">PrimeFaces.cw('InputText','widget_ibanSearchFieldsForm_ibanSearchRequest_checksum',{id:'ibanSearchFieldsForm:ibanSearchRequest:checksum'});</script>
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:j_idt35_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_ibanSearchFieldsForm_ibanSearchRequest_j_idt35',{id:'ibanSearchFieldsForm:ibanSearchRequest:j_idt35',target:'ibanSearchFieldsForm:ibanSearchRequest:checksum',mask:'int',preventPaste:false});});</script>
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:checksumWM_s" type="text/javascript">$(function(){PrimeFaces.cw('Watermark','widget_ibanSearchFieldsForm_ibanSearchRequest_checksumWM',{id:'ibanSearchFieldsForm:ibanSearchRequest:checksumWM',value:'PZ',target:'ibanSearchFieldsForm:ibanSearchRequest:checksum'},'watermark');});</script>
+                                    <span id="ibanSearchFieldsForm:ibanSearchRequest:bankcodePanel"><input id="ibanSearchFieldsForm:ibanSearchRequest:bankcode" name="ibanSearchFieldsForm:ibanSearchRequest:bankcode" type="text" maxlength="5" tabindex="2001" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all blz"><script id="ibanSearchFieldsForm:ibanSearchRequest:bankcode_s" type="text/javascript">PrimeFaces.cw('InputText','widget_ibanSearchFieldsForm_ibanSearchRequest_bankcode',{id:'ibanSearchFieldsForm:ibanSearchRequest:bankcode',behaviors:{change:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'ibanSearchFieldsForm:ibanSearchRequest:bankcode\',event:\'change\',process:\'ibanSearchFieldsForm:ibanSearchRequest:bankcode\',update:\'ibanSearchFieldsForm:ibanSearchRequest:bankcodePanel\',partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').show();};},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').hide();};}}, arguments[1]);']);}}});</script><script id="ibanSearchFieldsForm:ibanSearchRequest:j_idt36_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_ibanSearchFieldsForm_ibanSearchRequest_j_idt36',{id:'ibanSearchFieldsForm:ibanSearchRequest:j_idt36',target:'ibanSearchFieldsForm:ibanSearchRequest:bankcode',mask:'int',preventPaste:false});});</script><script id="ibanSearchFieldsForm:ibanSearchRequest:bankcodeWM_s" type="text/javascript">$(function(){PrimeFaces.cw('Watermark','widget_ibanSearchFieldsForm_ibanSearchRequest_bankcodeWM',{id:'ibanSearchFieldsForm:ibanSearchRequest:bankcodeWM',value:'BLZ',target:'ibanSearchFieldsForm:ibanSearchRequest:bankcode'},'watermark');});</script></span>
+                                    <input id="ibanSearchFieldsForm:ibanSearchRequest:accountNumber" name="ibanSearchFieldsForm:ibanSearchRequest:accountNumber" type="text" maxlength="11" tabindex="2002" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all kto">
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:accountNumber_s" type="text/javascript">PrimeFaces.cw('InputText','widget_ibanSearchFieldsForm_ibanSearchRequest_accountNumber',{id:'ibanSearchFieldsForm:ibanSearchRequest:accountNumber',behaviors:{change:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'ibanSearchFieldsForm:ibanSearchRequest:accountNumber\',event:\'change\',process:\'ibanSearchFieldsForm:ibanSearchRequest:accountNumber\',update:\'ibanSearchFieldsForm:ibanSearchRequest:accountNumber\',global:false,partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').show();};},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').hide();};}}, arguments[1]);']);}}});</script>
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:j_idt37_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_ibanSearchFieldsForm_ibanSearchRequest_j_idt37',{id:'ibanSearchFieldsForm:ibanSearchRequest:j_idt37',target:'ibanSearchFieldsForm:ibanSearchRequest:accountNumber',mask:'int',preventPaste:false});});</script>
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:j_idt38_s" type="text/javascript">$(function(){PrimeFaces.cw('Watermark','widget_ibanSearchFieldsForm_ibanSearchRequest_j_idt38',{id:'ibanSearchFieldsForm:ibanSearchRequest:j_idt38',value:'Kontonummer',target:'ibanSearchFieldsForm:ibanSearchRequest:accountNumber'},'watermark');});</script>
+                                    <button id="ibanSearchFieldsForm:ibanSearchRequest:ibanSearch" name="ibanSearchFieldsForm:ibanSearchRequest:ibanSearch" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-search-button" onclick="activateSearchByAccountCriteria();PrimeFaces.ab({source:'ibanSearchFieldsForm:ibanSearchRequest:ibanSearch',process:'ibanSearchFieldsForm',update:'ibanSearchFieldsForm:ibanSearchRequest:ibanSearch ibanSearchFieldsForm:ibanSearchRequest:bankcodePanel ibanSearchFieldsForm:ibanSearchRequest:accountNumber ibanSearchFieldsForm:ibanSearchRequest:checksum',partialSubmit:true});return false;" tabindex="2003" type="submit"><span class="ui-button-text ui-c"></span></button>
+                                    <script id="ibanSearchFieldsForm:ibanSearchRequest:ibanSearch_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_ibanSearchFieldsForm_ibanSearchRequest_ibanSearch',{id:'ibanSearchFieldsForm:ibanSearchRequest:ibanSearch'});</script>
+                                    <script type="text/javascript">activateSearchByAccountCriteria = function() {PrimeFaces.ab({source:'ibanSearchFieldsForm:ibanSearchRequest:j_idt39',formId:'ibanSearchFieldsForm',process:'ibanSearchFieldsForm:ibanSearchRequest:j_idt39',partialSubmit:true,params:arguments[0]});}</script>
+                                </div>
+                            </div>
+                            <a id="ibanSearchFieldsForm:customerExtendedSearchLink" href="#" class="ui-commandlink ui-widget redtextlink_right_down" onclick="PrimeFaces.ab({source:'ibanSearchFieldsForm:customerExtendedSearchLink',process:'ibanSearchFieldsForm:customerExtendedSearchLink',update:'customerSearchOverlay',partialSubmit:true,oncomplete:function(xhr,status,args){if (checkSuccess(args)) { initAndShowSearchDialog();};}});return false;">Erweiterte Suchoptionen / Neukundenanlage</a>
+                            <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                        </form>
+                    </div>
+                    <div id="customerSearchOverlay" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow search_overlay">
+                        <div class="ui-dialog-content ui-widget-content">
+                            <form id="searchCustomerForm" name="searchCustomerForm" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded" onkeypress="if (event.keyCode == 13) {                document.getElementById('searchCustomerForm:searchRequest:searchButton').focus();                document.getElementById('searchCustomerForm:searchRequest:searchButton').click();                return false; }">
+                                <input type="hidden" name="searchCustomerForm" value="searchCustomerForm">
+                                <div id="searchCustomerForm:msgsGlobalError" class="ui-messages ui-widget" aria-live="polite"></div>
+                                <div id="searchCustomerForm:searchRequest">
+                                    <table id="searchCustomerForm:searchRequest:grid">
+                                        <tbody>
+                                        <tr>
+                                            <td><span id="searchCustomerForm:searchRequest:customRadio"></span><script id="searchCustomerForm:searchRequest:customRadio_s" type="text/javascript">$(function(){PrimeFaces.cw('SelectOneRadio','widget_searchCustomerForm_searchRequest_customRadio',{id:'searchCustomerForm:searchRequest:customRadio',custom:true,behaviors:{change:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'searchCustomerForm:searchRequest:customRadio\',event:\'change\',process:\'searchCustomerForm:searchRequest:customRadio searchCustomerForm:searchRequest:opt2 searchCustomerForm:searchRequest:opt3\',update:\'searchCustomerForm:searchRequest:customerNumberSearchField:customerIdSearchCriteria searchCustomerForm:searchRequest:customerNameSearchFields:customerNameSearchCriteria ibanSearchFieldsForm:ibanSearchRequest\',partialSubmit:true}, arguments[1]);']);}}});});</script>
+                                                <div class="toggle_block">
+                                                    <div id="searchCustomerForm:searchRequest:opt2" class="ui-radiobutton ui-widget">
+                                                        <div class="ui-helper-hidden-accessible">
+                                                            <input id="searchCustomerForm:searchRequest:customRadio:0" name="searchCustomerForm:searchRequest:customRadio" type="radio" value="NAME">
+                                                        </div>
+                                                        <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                            <span class="ui-radiobutton-icon"></span>
+                                                        </div>
+                                                    </div>
+                                                    <label for="searchCustomerForm:searchRequest:opt2">Name</label>
+                                                </div>
+                                                <div id="searchCustomerForm:searchRequest:customerNameSearchFields">
+                                                    <div id="searchCustomerForm:searchRequest:customerNameSearchFields:customerNameSearchCriteria" class="toggle_block search_name" style="display:none;">
+                                                        <table>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNameSearchFields:j_idt61" class="ui-outputlabel ui-widget search_label_name">Nachname</label></td>
+                                                                <td><input id="searchCustomerForm:searchRequest:customerNameSearchFields:lastname" name="searchCustomerForm:searchRequest:customerNameSearchFields:lastname" type="text" maxlength="30" tabindex="9000" onkeypress="validateNameInput(event,this)" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all search_namenr"><script id="searchCustomerForm:searchRequest:customerNameSearchFields:lastname_s" type="text/javascript">PrimeFaces.cw('InputText','widget_searchCustomerForm_searchRequest_customerNameSearchFields_lastname',{id:'searchCustomerForm:searchRequest:customerNameSearchFields:lastname'});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNameSearchFields:j_idt62" class="ui-outputlabel ui-widget search_label_name">Vorname</label></td>
+                                                                <td><input id="searchCustomerForm:searchRequest:customerNameSearchFields:firstname" name="searchCustomerForm:searchRequest:customerNameSearchFields:firstname" type="text" maxlength="30" tabindex="9001" onkeypress="validateNameInput(event,this)" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all search_namenr"><script id="searchCustomerForm:searchRequest:customerNameSearchFields:firstname_s" type="text/javascript">PrimeFaces.cw('InputText','widget_searchCustomerForm_searchRequest_customerNameSearchFields_firstname',{id:'searchCustomerForm:searchRequest:customerNameSearchFields:firstname'});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNameSearchFields:j_idt63" class="ui-outputlabel ui-widget search_label_name">Geburtsdatum</label></td>
+                                                                <td><span id="searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth" class="search_zipbirth"><input id="searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth_input" name="searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all" tabindex="9002"></span><script id="searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth_s" type="text/javascript">$(function(){PrimeFaces.cw('Calendar','widget_searchCustomerForm_searchRequest_customerNameSearchFields_dateofbirth',{id:'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth',popup:true,locale:'de',dateFormat:'dd.mm.yy',changeMonth:true,changeYear:true,showOn:'button',behaviors:{dateSelect:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth\',event:\'dateSelect\',process:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth\',update:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth searchCustomerForm:searchRequest:customerNameSearchFields:dateOfBirthMsg searchCustomerForm:searchRequest:customerNameSearchFields:zipcode\',global:false,partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').show();};},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').hide();};}}, arguments[1]);']);},change:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth\',event:\'change\',process:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth\',update:\'searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth searchCustomerForm:searchRequest:customerNameSearchFields:dateOfBirthMsg searchCustomerForm:searchRequest:customerNameSearchFields:zipcode\',global:false,partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').show();};},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').hide();};}}, arguments[1]);']);}}});});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNameSearchFields:j_idt64" class="ui-outputlabel ui-widget search_label_name">PLZ</label></td>
+                                                                <td><input id="searchCustomerForm:searchRequest:customerNameSearchFields:zipcode" name="searchCustomerForm:searchRequest:customerNameSearchFields:zipcode" type="text" maxlength="4" tabindex="9003" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all search_zipbirth"><script id="searchCustomerForm:searchRequest:customerNameSearchFields:zipcode_s" type="text/javascript">PrimeFaces.cw('InputText','widget_searchCustomerForm_searchRequest_customerNameSearchFields_zipcode',{id:'searchCustomerForm:searchRequest:customerNameSearchFields:zipcode',behaviors:{change:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'searchCustomerForm:searchRequest:customerNameSearchFields:zipcode\',event:\'change\',process:\'searchCustomerForm:searchRequest:customerNameSearchFields:zipcode\',update:\'searchCustomerForm:searchRequest:customerNameSearchFields:zipcode searchCustomerForm:searchRequest:customerNameSearchFields:zipCodeMsg searchCustomerForm:searchRequest:customerNameSearchFields:dateofbirth searchCustomerForm:searchRequest:customerNameSearchFields:dateOfBirthMsg\',global:false,partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').show();};},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != \'undefined\')  {PF(\'statusDialogNonModal\').hide();};}}, arguments[1]);']);}}});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><script id="searchCustomerForm:searchRequest:customerNameSearchFields:j_idt65_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_searchCustomerForm_searchRequest_customerNameSearchFields_j_idt65',{id:'searchCustomerForm:searchRequest:customerNameSearchFields:j_idt65',target:'searchCustomerForm:searchRequest:customerNameSearchFields:zipcode',mask:'int',preventPaste:false});});</script></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div id="searchCustomerForm:searchRequest:customerNameSearchFields:lastnameMsg" aria-live="polite" class="ui-message"></div>
+                                                        <div id="searchCustomerForm:searchRequest:customerNameSearchFields:firstnameMsg" aria-live="polite" class="ui-message"></div>
+                                                        <div id="searchCustomerForm:searchRequest:customerNameSearchFields:dateOfBirthMsg" aria-live="polite" class="ui-message"></div>
+                                                        <div id="searchCustomerForm:searchRequest:customerNameSearchFields:zipCodeMsg" aria-live="polite" class="ui-message"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="toggle_block border_block">
+                                                    <div id="searchCustomerForm:searchRequest:opt3" class="ui-radiobutton ui-widget">
+                                                        <div class="ui-helper-hidden-accessible">
+                                                            <input id="searchCustomerForm:searchRequest:customRadio:1" name="searchCustomerForm:searchRequest:customRadio" type="radio" value="NUMBER">
+                                                        </div>
+                                                        <div class="ui-radiobutton-box ui-widget ui-corner-all ui-state-default">
+                                                            <span class="ui-radiobutton-icon"></span>
+                                                        </div>
+                                                    </div>
+                                                    <label for="searchCustomerForm:searchRequest:opt3">Kundennummer</label>
+                                                </div>
+                                                <div id="searchCustomerForm:searchRequest:customerNumberSearchField">
+                                                    <div id="searchCustomerForm:searchRequest:customerNumberSearchField:customerIdSearchCriteria" class="toggle_block search_number" style="display:none;">
+                                                        <table>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNumberSearchField:j_idt71" class="ui-outputlabel ui-widget search_label">Mandant</label></td>
+                                                                <td>
+                                                                    <div id="searchCustomerForm:searchRequest:customerNumberSearchField:entity" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all ui-helper-clearfix select_search">
+                                                                        <div class="ui-helper-hidden-accessible">
+                                                                            <select id="searchCustomerForm:searchRequest:customerNumberSearchField:entity_input" name="searchCustomerForm:searchRequest:customerNumberSearchField:entity_input" tabindex="-1"><option value="BAWAG">BAWAG</option><option value="P.S.K." selected>P.S.K.</option><option value="Sparda">Sparda</option></select>
+                                                                        </div>
+                                                                        <div class="ui-helper-hidden-accessible">
+                                                                            <input id="searchCustomerForm:searchRequest:customerNumberSearchField:entity_focus" name="searchCustomerForm:searchRequest:customerNumberSearchField:entity_focus" type="text" autocomplete="off" tabindex="9004">
+                                                                        </div>
+                                                                        <label id="searchCustomerForm:searchRequest:customerNumberSearchField:entity_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label>
+                                                                        <div class="ui-selectonemenu-trigger ui-state-default ui-corner-right">
+                                                                            <span class="ui-icon ui-icon-triangle-1-s ui-c"></span>
+                                                                        </div>
+                                                                        <div id="searchCustomerForm:searchRequest:customerNumberSearchField:entity_panel" class="ui-selectonemenu-panel ui-widget-content ui-corner-all ui-helper-hidden ui-shadow">
+                                                                            <div class="ui-selectonemenu-items-wrapper" style="height:auto">
+                                                                                <ul class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset">
+                                                                                    <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="BAWAG">BAWAG</li>
+                                                                                    <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="P.S.K.">P.S.K.</li>
+                                                                                    <li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Sparda">Sparda</li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><script id="searchCustomerForm:searchRequest:customerNumberSearchField:entity_s" type="text/javascript">$(function(){PrimeFaces.cw('SelectOneMenu','widget_searchCustomerForm_searchRequest_customerNumberSearchField_entity',{id:'searchCustomerForm:searchRequest:customerNumberSearchField:entity'});});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><label id="searchCustomerForm:searchRequest:customerNumberSearchField:j_idt73" class="ui-outputlabel ui-widget search_label_nr">Kundennummer</label></td>
+                                                                <td><input id="searchCustomerForm:searchRequest:customerNumberSearchField:customerId" name="searchCustomerForm:searchRequest:customerNumberSearchField:customerId" type="text" maxlength="8" tabindex="9005" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all search_namenr"><script id="searchCustomerForm:searchRequest:customerNumberSearchField:customerId_s" type="text/javascript">PrimeFaces.cw('InputText','widget_searchCustomerForm_searchRequest_customerNumberSearchField_customerId',{id:'searchCustomerForm:searchRequest:customerNumberSearchField:customerId'});</script></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><script id="searchCustomerForm:searchRequest:customerNumberSearchField:j_idt74_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_searchCustomerForm_searchRequest_customerNumberSearchField_j_idt74',{id:'searchCustomerForm:searchRequest:customerNumberSearchField:j_idt74',target:'searchCustomerForm:searchRequest:customerNumberSearchField:customerId',mask:'int',preventPaste:false});});</script></td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <div id="searchCustomerForm:searchRequest:customerNumberSearchField:entityMsg" aria-live="polite" class="ui-message"></div>
+                                                        <div id="searchCustomerForm:searchRequest:customerNumberSearchField:customerIdMsg" aria-live="polite" class="ui-message"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="border_block button_block">
+                                                    <button id="searchCustomerForm:searchRequest:searchButton" name="searchCustomerForm:searchRequest:searchButton" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only redgradient_btn" onclick="PrimeFaces.ab({source:'searchCustomerForm:searchRequest:searchButton',event:'click',process:'searchCustomerForm',update:'searchCustomerForm',partialSubmit:true}, arguments[1]);;PrimeFaces.ab({source:'searchCustomerForm:searchRequest:searchButton',partialSubmit:true});return false;" tabindex="9006" type="submit"><span class="ui-button-text ui-c">Kunde suchen</span></button>
+                                                    <script id="searchCustomerForm:searchRequest:searchButton_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_searchCustomerForm_searchRequest_searchButton',{id:'searchCustomerForm:searchRequest:searchButton',behaviors:{click:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'searchCustomerForm:searchRequest:searchButton\',event:\'click\',process:\'searchCustomerForm\',update:\'searchCustomerForm\',partialSubmit:true}, arguments[1]);']);}}});</script>
+                                                </div></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <script type="text/javascript">initAndShowSearchDialog = function() {PrimeFaces.ab({source:'searchCustomerForm:j_idt78',formId:'searchCustomerForm',process:'searchCustomerForm:j_idt78',update:'customerSearchOverlay',partialSubmit:true,oncomplete:function(xhr,status,args){showCustomerSearch();;},params:arguments[0]});}</script>
+                                <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                            </form>
+                        </div>
+                    </div>
+                    <script id="customerSearchOverlay_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','customerSearchWidget',{id:'customerSearchOverlay',closeOnEscape:true});});</script>
+                </div>
+            </div>
+     <span id="content">
+      <div id="j_idt86" class="ui-panel ui-widget ui-widget-content ui-corner-all overviewheader clearfix" data-widget="widget_j_idt86">
+       <div id="j_idt86_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+        <span class="ui-panel-title">Arbeitsplatz</span>
+       </div>
+       <div id="j_idt86_content" class="ui-panel-content ui-widget-content"></div>
+      </div><script id="j_idt86_s" type="text/javascript">PrimeFaces.cw('Panel','widget_j_idt86',{id:'j_idt86'});</script>
+      <div id="msgs" class="ui-messages ui-widget" aria-live="polite"></div>
+      <div class="centerContent">
+       <div id="appointments" class="ui-panel ui-widget ui-widget-content ui-corner-all content390 appointments" data-widget="widget_appointments">
+        <div id="appointments_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+         <span class="ui-panel-title"> <h1>Termine </h1></span>
+        </div>
+        <div id="appointments_content" class="ui-panel-content ui-widget-content">
+         <div id="advisorAppointmentsPanel" class="ui-outputpanel ui-widget">
+          <div class="ui-outputpanel-loading ui-widget"></div>
+         </div>
+         <script id="advisorAppointmentsPanel_s" type="text/javascript">$(function(){PrimeFaces.cw('OutputPanel','widget_advisorAppointmentsPanel',{id:'advisorAppointmentsPanel',deferred:true,deferredMode:'load'});});</script>
+        </div>
+       </div>
+       <script id="appointments_s" type="text/javascript">PrimeFaces.cw('Panel','widget_appointments',{id:'appointments'});</script>
+       <div id="branchCalendar" class="ui-panel ui-widget ui-widget-content ui-corner-all content770 branchCalendar" data-widget="widget_branchCalendar">
+        <div id="branchCalendar_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+         <span class="ui-panel-title"> <h1>Filialterminfinder<a href="http://nzbkdt02/bkde_u7/Framework/UpdateProtocol.aspx?Maske=Filialkalender&amp;Datum=20160412&amp;Ansicht=1" target="mm_window" class="ui-button-ex_mm"></a> </h1></span>
+        </div>
+        <div id="branchCalendar_content" class="ui-panel-content ui-widget-content">
+         <div id="branchCalendarPanel" class="ui-outputpanel ui-widget">
+          <div class="ui-outputpanel-loading ui-widget"></div>
+         </div>
+         <script id="branchCalendarPanel_s" type="text/javascript">$(function(){PrimeFaces.cw('OutputPanel','widget_branchCalendarPanel',{id:'branchCalendarPanel',deferred:true,deferredMode:'load'});});</script>
+        </div>
+       </div>
+       <script id="branchCalendar_s" type="text/javascript">PrimeFaces.cw('Panel','widget_branchCalendar',{id:'branchCalendar'});</script>
+       <div id="news" class="ui-panel ui-widget ui-widget-content ui-corner-all content390 news" data-widget="widget_news">
+        <div id="news_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+         <span class="ui-panel-title"> <h1>Newsbox </h1></span>
+        </div>
+        <div id="news_content" class="ui-panel-content ui-widget-content">
+         <div id="newsPanel" class="ui-outputpanel ui-widget">
+          <div class="ui-outputpanel-loading ui-widget"></div>
+         </div>
+         <script id="newsPanel_s" type="text/javascript">$(function(){PrimeFaces.cw('OutputPanel','widget_newsPanel',{id:'newsPanel',deferred:true,deferredMode:'load'});});</script>
+        </div>
+       </div>
+       <script id="news_s" type="text/javascript">PrimeFaces.cw('Panel','widget_news',{id:'news'});</script>
+       <div id="desktopTopTips" class="ui-panel ui-widget ui-widget-content ui-corner-all content770 desktopTopTips" data-widget="widget_desktopTopTips">
+        <div id="desktopTopTips_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
+         <span class="ui-panel-title"> <h1>Meine Top-Tipps<a href="http://nzbkdt02/bkde_u7/Framework/UpdateProtocol.aspx?Maske=CRM-Top-Tipp-Overview" target="mm_window" class="ui-button-ex_mm"></a> </h1></span>
+        </div>
+        <div id="desktopTopTips_content" class="ui-panel-content ui-widget-content">
+         <div id="advisorTopTipsPanel" class="ui-outputpanel ui-widget">
+          <div class="ui-outputpanel-loading ui-widget"></div>
+         </div>
+         <script id="advisorTopTipsPanel_s" type="text/javascript">$(function(){PrimeFaces.cw('OutputPanel','widget_advisorTopTipsPanel',{id:'advisorTopTipsPanel',deferred:true,deferredMode:'load'});});</script>
+        </div>
+       </div>
+       <script id="desktopTopTips_s" type="text/javascript">PrimeFaces.cw('Panel','widget_desktopTopTips',{id:'desktopTopTips'});</script>
+      </div></span>
+            <div id="alfaMessageDialog">
+                <div id="alfaMessageDialog:alfaMessageDialogId" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow canceldialog">
+                    <div class="ui-dialog-content ui-widget-content">
+                        <form id="alfaMessageDialog:Form" name="alfaMessageDialog:Form" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+                            <input type="hidden" name="alfaMessageDialog:Form" value="alfaMessageDialog:Form">
+                            <div id="alfaMessageDialog:Form:j_idt211" class="ui-outputpanel ui-widget ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top">
+                                <label id="alfaMessageDialog:Form:j_idt212" class="ui-outputlabel ui-widget ui-dialog-title">Bearbeitung fortsetzen in ALFA</label>
+                                <a id="alfaMessageDialog:Form:j_idt213" href="#" class="ui-commandlink ui-widget ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" onclick="PrimeFaces.ab({source:'alfaMessageDialog:Form:j_idt213',process:'alfaMessageDialog:Form:j_idt213',partialSubmit:true,onstart:function(cfg){PF('alfa_poll').stop();},oncomplete:function(xhr,status,args){PF('alfaMessageDlg').hide();}});return false;">
+                                    <div class="ui-icon ui-icon-closethick">
+                                        X
+                                    </div></a>
+                            </div>
+                            <script id="alfaMessageDialog:Form:j_idt215_s" type="text/javascript">$(function(){PrimeFaces.cw('Poll','alfa_poll',{id:'alfaMessageDialog:Form:j_idt215',frequency:6,autoStart:false,fn:function(){PrimeFaces.ab({source:'alfaMessageDialog:Form:j_idt215',formId:'alfaMessageDialog:Form',process:'alfaMessageDialog:Form:j_idt215',update:'alfaMessageDialog:Form',global:false,partialSubmit:true,onstart:function(cfg){if (typeof statusDialogNonModal != 'undefined')  {PF('statusDialogNonModal').show();} notifyAlfa('');},oncomplete:function(xhr,status,args){if (typeof statusDialogNonModal != 'undefined')  {PF('statusDialogNonModal').hide();};}});}});});</script>
+                            <div id="alfaMessageDialog:Form:j_idt216" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_alfaMessageDialog_Form_j_idt216">
+                                <div id="alfaMessageDialog:Form:j_idt216_content" class="ui-panel-content ui-widget-content">
+                                    <div id="alfaMessageDialog:Form:msgs" class="ui-messages ui-widget" aria-live="polite"></div>
+                                    <div id="alfaMessageDialog:Form:j_idt217" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_alfaMessageDialog_Form_j_idt217">
+                                        <div id="alfaMessageDialog:Form:j_idt217_content" class="ui-panel-content ui-widget-content">
+                                            <span class="txtleft"><br><br></span>
+                                            <span class="txtleft">Bitte gehen Sie nun nach ALFA und bearbeiten den Kunden dort weiter. Sobald Sie die Bearbeitung in ALFA dort abgeschlossen haben, k?nnen Sie mit OK die Bearbeitung fortsetzen. Falls ALFA f?r den ben?tigten Mandanten nicht ge?ffnet ist, starten Sie bitte ALFA.</span>
+                                        </div>
+                                    </div>
+                                    <script id="alfaMessageDialog:Form:j_idt217_s" type="text/javascript">PrimeFaces.cw('Panel','widget_alfaMessageDialog_Form_j_idt217',{id:'alfaMessageDialog:Form:j_idt217'});</script>
+                                </div>
+                            </div>
+                            <script id="alfaMessageDialog:Form:j_idt216_s" type="text/javascript">PrimeFaces.cw('Panel','widget_alfaMessageDialog_Form_j_idt216',{id:'alfaMessageDialog:Form:j_idt216'});</script>
+                            <div id="alfaMessageDialog:Form:buttonbar" class="ui-outputpanel ui-widget">
+                                <img id="alfaMessageDialog:Form:j_idt225" src="/salesfrontend/javax.faces.resource/progress.gif?ln=images" alt="">
+                                <button id="alfaMessageDialog:Form:j_idt229" name="alfaMessageDialog:Form:j_idt229" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-disabled cancel_redgradient_btn" onclick="PrimeFaces.ab({source:'alfaMessageDialog:Form:j_idt229',process:'alfaMessageDialog:Form:j_idt229',partialSubmit:true,onstart:function(cfg){PF('alfa_poll').stop();},oncomplete:function(xhr,status,args){PF('alfaMessageDlg').hide();}});return false;" type="submit" disabled><span class="ui-button-text ui-c">OK</span></button>
+                                <script id="alfaMessageDialog:Form:j_idt229_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_alfaMessageDialog_Form_j_idt229',{id:'alfaMessageDialog:Form:j_idt229'});</script>
+                            </div>
+                            <div id="alfaMessageDialog:Form:j_idt230" class="ui-outputpanel ui-widget">
+                                <label id="alfaMessageDialog:Form:j_idt231" class="ui-outputlabel ui-widget">Development Mode only</label>
+                                <button id="alfaMessageDialog:Form:j_idt232" name="alfaMessageDialog:Form:j_idt232" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only cancel_redgradient_btn" onclick="PrimeFaces.ab({source:'alfaMessageDialog:Form:j_idt232',process:'alfaMessageDialog:Form:j_idt232',partialSubmit:true});return false;" type="submit"><span class="ui-button-text ui-c">DEBUG: ERROR</span></button>
+                                <script id="alfaMessageDialog:Form:j_idt232_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_alfaMessageDialog_Form_j_idt232',{id:'alfaMessageDialog:Form:j_idt232'});</script>
+                                <button id="alfaMessageDialog:Form:j_idt233" name="alfaMessageDialog:Form:j_idt233" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only cancel_redgradient_btn" onclick="PrimeFaces.ab({source:'alfaMessageDialog:Form:j_idt233',process:'alfaMessageDialog:Form:j_idt233',partialSubmit:true});return false;" type="submit"><span class="ui-button-text ui-c">DEBUG: OK</span></button>
+                                <script id="alfaMessageDialog:Form:j_idt233_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_alfaMessageDialog_Form_j_idt233',{id:'alfaMessageDialog:Form:j_idt233'});</script>
+                            </div>
+                            <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+                <script id="alfaMessageDialog:alfaMessageDialogId_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','alfaMessageDlg',{id:'alfaMessageDialog:alfaMessageDialogId',modal:true,onHide:function(){PF('alfa_poll').stop()}});});</script>
+            </div>
+            <div id="brokerDialog" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow brokerDialog">
+                <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top">
+                    <span id="brokerDialog_title" class="ui-dialog-title">Vermittlerdaten</span>
+                </div>
+                <div class="ui-dialog-content ui-widget-content">
+                    <div id="j_idt241" class="ui-messages ui-widget" aria-live="polite"></div>
+                    <form id="j_idt242" name="j_idt242" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="j_idt242" value="j_idt242">
+                        <div id="j_idt242:j_idt243" class="ui-panel ui-widget ui-widget-content ui-corner-all backgroundwrap" data-widget="widget_j_idt242_j_idt243">
+                            <div id="j_idt242:j_idt243_content" class="ui-panel-content ui-widget-content">
+                                <table id="j_idt242:j_idt244" class="ui-panelgrid ui-widget" role="grid">
+                                    <tbody>
+                                    <tr class="ui-widget-content ui-panelgrid-even" role="row">
+                                        <td role="gridcell" class="ui-panelgrid-cell td_label">BLZ:</td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt242:bankCode" name="j_idt242:bankCode" type="text" value="14200" maxlength="5" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"><script id="j_idt242:bankCode_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt242_bankCode',{id:'j_idt242:bankCode'});</script><script id="j_idt242:j_idt249_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_j_idt242_j_idt249',{id:'j_idt242:j_idt249',target:'j_idt242:bankCode',mask:'int',preventPaste:false});});</script></td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_message">
+                                            <div id="j_idt242:j_idt251" aria-live="polite" class="ui-message"></div></td>
+                                    </tr>
+                                    <tr class="ui-widget-content ui-panelgrid-odd" role="row">
+                                        <td role="gridcell" class="ui-panelgrid-cell td_label">Konto:</td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt242:accountNo" name="j_idt242:accountNo" type="text" value="0014200000000" maxlength="13" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"><script id="j_idt242:accountNo_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt242_accountNo',{id:'j_idt242:accountNo'});</script><script id="j_idt242:j_idt256_s" type="text/javascript">$(function() {PrimeFacesExt.cw('KeyFilter', 'widget_j_idt242_j_idt256',{id:'j_idt242:j_idt256',target:'j_idt242:accountNo',mask:'int',preventPaste:false});});</script></td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_message">
+                                            <div id="j_idt242:j_idt258" aria-live="polite" class="ui-message"></div></td>
+                                    </tr>
+                                    <tr class="ui-widget-content ui-panelgrid-even" role="row">
+                                        <td role="gridcell" class="ui-panelgrid-cell td_label">Telefonnummer:</td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt242:telephoneNumber" name="j_idt242:telephoneNumber" type="text" value="06508888222" maxlength="35" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"><script id="j_idt242:telephoneNumber_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt242_telephoneNumber',{id:'j_idt242:telephoneNumber'});</script></td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_message">
+                                            <div id="j_idt242:j_idt264" aria-live="polite" class="ui-message"></div></td>
+                                    </tr>
+                                    <tr class="ui-widget-content ui-panelgrid-odd" role="row">
+                                        <td role="gridcell" class="ui-panelgrid-cell td_label">Durchwahl:</td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt242:directDial" name="j_idt242:directDial" type="text" value="123" maxlength="5" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"><script id="j_idt242:directDial_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt242_directDial',{id:'j_idt242:directDial'});</script></td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_message">
+                                            <div id="j_idt242:j_idt270" aria-live="polite" class="ui-message"></div></td>
+                                    </tr>
+                                    <tr class="ui-widget-content ui-panelgrid-even" role="row">
+                                        <td role="gridcell" class="ui-panelgrid-cell td_label">E-Mail:</td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt242:eMail" name="j_idt242:eMail" type="text" value="spam@me.com" maxlength="60" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all"><script id="j_idt242:eMail_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt242_eMail',{id:'j_idt242:eMail'});</script></td>
+                                        <td role="gridcell" class="ui-panelgrid-cell td_message">
+                                            <div id="j_idt242:j_idt276" aria-live="polite" class="ui-message"></div></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <script id="j_idt242:j_idt243_s" type="text/javascript">PrimeFaces.cw('Panel','widget_j_idt242_j_idt243',{id:'j_idt242:j_idt243'});</script>
+                        <div id="j_idt242:j_idt277" class="ui-outputpanel ui-widget buttonbar">
+                            <button id="j_idt242:save" name="j_idt242:save" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PrimeFaces.ab({source:'j_idt242:save',process:'j_idt242',update:'j_idt242',partialSubmit:true,oncomplete:function(xhr,status,args){if (checkSuccess(args)) {PF('brokerDlg').hide();};}});return false;" type="submit"><span class="ui-button-text ui-c">Speichern</span></button>
+                            <script id="j_idt242:save_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_j_idt242_save',{id:'j_idt242:save'});</script>
+                        </div>
+                        <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                    </form>
+                </div>
+            </div>
+            <script id="brokerDialog_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','brokerDlg',{id:'brokerDialog',modal:true});});</script>
+            <div id="profitCenterDialog" class="ui-dialog ui-widget ui-widget-content ui-overlay-hidden ui-corner-all ui-shadow brokerDialog">
+                <div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top">
+                    <span id="profitCenterDialog_title" class="ui-dialog-title">Profitcenter konfigurieren</span>
+                    <a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all"><span class="ui-icon ui-icon-closethick"></span></a>
+                </div>
+                <div class="ui-dialog-content ui-widget-content">
+                    <form id="j_idt280" name="j_idt280" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+                        <input type="hidden" name="j_idt280" value="j_idt280">
+                        <div id="j_idt280:j_idt281">
+                            <div id="j_idt280:j_idt281:j_idt283" class="ui-panel ui-widget ui-widget-content ui-corner-all backgroundwrap" data-widget="widget_j_idt280_j_idt281_j_idt283">
+                                <div id="j_idt280:j_idt281:j_idt283_content" class="ui-panel-content ui-widget-content">
+                                    <table id="j_idt280:j_idt281:j_idt284:0:j_idt285" class="ui-panelgrid ui-widget" role="grid">
+                                        <tbody>
+                                        <tr class="ui-widget-content ui-panelgrid-even" role="row">
+                                            <td role="gridcell" class="ui-panelgrid-cell td_label">Mandant 0100</td>
+                                            <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt280:j_idt281:j_idt284:0:j_idt290" name="j_idt280:j_idt281:j_idt284:0:j_idt290" type="text" value="MVB" maxlength="4" title="BAWAG" disabled class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"><script id="j_idt280:j_idt281:j_idt284:0:j_idt290_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt280_j_idt281_j_idt284_0_j_idt290',{id:'j_idt280:j_idt281:j_idt284:0:j_idt290'});</script></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="j_idt280:j_idt281:j_idt284:1:j_idt285" class="ui-panelgrid ui-widget" role="grid">
+                                        <tbody>
+                                        <tr class="ui-widget-content ui-panelgrid-even" role="row">
+                                            <td role="gridcell" class="ui-panelgrid-cell td_label">Mandant 0110</td>
+                                            <td role="gridcell" class="ui-panelgrid-cell td_input"><input id="j_idt280:j_idt281:j_idt284:1:j_idt290" name="j_idt280:j_idt281:j_idt284:1:j_idt290" type="text" value="MVX" maxlength="4" title="PSK" disabled class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all ui-state-disabled"><script id="j_idt280:j_idt281:j_idt284:1:j_idt290_s" type="text/javascript">PrimeFaces.cw('InputText','widget_j_idt280_j_idt281_j_idt284_1_j_idt290',{id:'j_idt280:j_idt281:j_idt284:1:j_idt290'});</script></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div id="j_idt280:j_idt281:j_idt291" class="ui-messages ui-widget" aria-live="polite"></div>
+                                </div>
+                            </div>
+                            <script id="j_idt280:j_idt281:j_idt283_s" type="text/javascript">PrimeFaces.cw('Panel','widget_j_idt280_j_idt281_j_idt283',{id:'j_idt280:j_idt281:j_idt283'});</script>
+                            <div id="j_idt280:j_idt281:j_idt292" class="ui-outputpanel ui-widget buttonbar">
+                                <button id="j_idt280:j_idt281:changeCenter" name="j_idt280:j_idt281:changeCenter" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only redgradient_btn" onclick="PrimeFaces.ab({source:'j_idt280:j_idt281:changeCenter',process:'j_idt280',update:'j_idt280',partialSubmit:true});return false;" type="submit"><span class="ui-button-text ui-c">?ndern</span></button>
+                                <script id="j_idt280:j_idt281:changeCenter_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_j_idt280_j_idt281_changeCenter',{id:'j_idt280:j_idt281:changeCenter'});</script>
+                                <button id="j_idt280:j_idt281:updateCenter" name="j_idt280:j_idt281:updateCenter" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only redgradient_btn_margin_left" onclick="PrimeFaces.ab({source:'j_idt280:j_idt281:updateCenter',process:'j_idt280',update:'j_idt280',partialSubmit:true,oncomplete:function(xhr,status,args){if (checkSuccess(args)) {PF('profitCenterDlg').hide();};}});return false;" type="submit"><span class="ui-button-text ui-c">Speichern</span></button>
+                                <script id="j_idt280:j_idt281:updateCenter_s" type="text/javascript">PrimeFaces.cw('CommandButton','widget_j_idt280_j_idt281_updateCenter',{id:'j_idt280:j_idt281:updateCenter'});</script>
+                            </div>
+                        </div>
+                        <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+                    </form>
+                </div>
+            </div>
+            <script id="profitCenterDialog_s" type="text/javascript">$(function(){PrimeFaces.cw('Dialog','profitCenterDlg',{id:'profitCenterDialog',resizable:false,modal:true,behaviors:{close:function(event,ext){PrimeFaces.bc(this,event,ext,['PrimeFaces.ab({source:\'profitCenterDialog\',event:\'close\',process:\'@none\',update:\'profitCenterDialog\',partialSubmit:true}, arguments[1]);']);}}});});</script>
+        </div>
+    </div>
+</div>
+<div id="j_idt295" class="ui-layout-unit ui-widget ui-widget-content ui-corner-all ui-layout-footer">
+    <div class="ui-layout-unit-content ui-widget-content">
+        <a id="refresh" href="#" class="ui-commandlink ui-widget redtextlink refresh" onclick="PrimeFaces.ab({source:'refresh',process:'refresh',update:'newsPanel branchCalendarPanel advisorAppointmentsPanel advisorTopTipsPanel',partialSubmit:true});return false;">Seite aktualisieren</a>
+        <div id="j_idt296" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all">
+            Alle Seiteninhalte neu laden
+        </div>
+        <script id="j_idt296_s" type="text/javascript">$(function(){PrimeFaces.cw('Tooltip','widget_j_idt296',{id:'j_idt296',showEffect:'fade',hideEffect:'fade',target:'refresh'});});</script>
+    </div>
+</div>
+<form id="delayedLinkForm" name="delayedLinkForm" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="delayedLinkForm" value="delayedLinkForm">
+    <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+</form>
+<form id="delayedMessageForm" name="delayedMessageForm" method="post" action="/salesfrontend/desktop/desktop.xhtml" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="delayedMessageForm" value="delayedMessageForm">
+    <input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="6432071905963917220:1250625236995025572" autocomplete="off">
+</form>
+<ul id="javax_faces_developmentstage_messages" title="Project Stage[Development]: Unhandled Messages">
+    <li style="Color: orange"> The button/link/text component needs to have a Form in its ancestry. Please add &lt;h:form&gt;. </li>
+</ul>
+</body>
+</html>

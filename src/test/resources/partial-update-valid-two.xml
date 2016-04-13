@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<partial-response><changes>
+    <update id="advisorAppointmentsPanel"><![CDATA[<span id="externalCalendar">hilarious</span>]]></update>
+    <update id="advisorAppointmentsPanel"><![CDATA[<span id="externalCalendar">terrific</span>]]></update>
+    <update id="javax.faces.ViewState"><![CDATA[6432071905963917220:1250625236995025572]]></update><extension ln="primefaces" type="args">{"exceptionThrown":false}</extension></changes></partial-response>
