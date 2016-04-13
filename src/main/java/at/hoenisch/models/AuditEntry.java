@@ -9,7 +9,6 @@ import java.util.Map;
 public class AuditEntry implements Serializable {
 
     private AuditEntry m_parent;
-    private AuditEntry m_child;
 
     private String m_request;
     private String m_requestMethod;
@@ -21,7 +20,9 @@ public class AuditEntry implements Serializable {
     private String m_query;
     private String m_contextPath;
     private String m_pathInfo;
+    private String m_customerId;
     private long m_timestamp;
+    private String m_currentUser;
 
 
     public AuditEntry getParent() {
@@ -30,14 +31,6 @@ public class AuditEntry implements Serializable {
 
     public void setParent(AuditEntry parent) {
         this.m_parent = parent;
-    }
-
-    public AuditEntry getChild() {
-        return m_child;
-    }
-
-    public void setChild(AuditEntry child) {
-        this.m_child = child;
     }
 
     public String getRequest() {
@@ -120,20 +113,37 @@ public class AuditEntry implements Serializable {
         return m_pathInfo;
     }
 
+    public void setCustomerId(String customerId) {
+        this.m_customerId = customerId;
+    }
+
     public void setTimestamp(long timestamp) {
         this.m_timestamp = timestamp;
+    }
+
+    public String getCustomerId() {
+        return m_customerId;
     }
 
     public long getTimestamp() {
         return m_timestamp;
     }
 
+    public String getCurrentUser() {
+        return m_currentUser;
+    }
+
+    public void setCurrentUser(String currentUser) {
+        this.m_currentUser = currentUser;
+    }
 
     @Override
     public String toString() {
         return "AuditEntry{" +
+                "m_currentUser='" + m_currentUser +
                 "', m_timestamp=" + m_timestamp +
                 ", m_requestMethod='" + m_requestMethod + '\'' +
+                ", m_customerId=" + m_customerId +
                 ", m_contextPath='" + m_contextPath + '\'' +
                 ", m_attributes=" + m_attributes +
                 ", m_ajaxUpdate=" + m_ajaxUpdate +

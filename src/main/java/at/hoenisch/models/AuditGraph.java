@@ -26,4 +26,8 @@ public class AuditGraph implements Serializable {
             return null;
         }
     }
+
+    public LinkedList<AuditEntry> getAuditEntries() {
+        return m_auditEntries;
+    }
 }

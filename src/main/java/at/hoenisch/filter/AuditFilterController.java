@@ -33,7 +33,6 @@ public class AuditFilterController implements Serializable {
         if (auditEntry.isAjaxUpdate()) {
             AuditEntry lastEntry = auditGraph.getLastEntry();
             if (lastEntry != null) {
-                lastEntry.setChild(auditEntry);
                 auditEntry.setParent(lastEntry);
             }
         }
