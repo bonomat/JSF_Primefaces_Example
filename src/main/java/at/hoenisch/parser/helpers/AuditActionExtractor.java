@@ -51,17 +51,15 @@ public class AuditActionExtractor {
     public static String getActionSource(AuditEntry auditEntry, Document currentPage) {
         Map<String, String> parameters = auditEntry.getParameters();
         String source = parameters.get("javax.faces.source");
-        Element elementById = currentPage.getElementById(source);
         String elementText = "";
-        if (elementById == null) {
-            try {
-                String formTagName = FormIdExtractor.extract(source);
-                elementText = SubmitButtonFinder.find(currentPage, formTagName, source).text();
-            } catch (ElementNotFoundException e) {
-                elementText = "*BUTTON_HAS_NO_NAME*";
-            }
-        } else {
-            elementText = elementById.text();
+        try {
+            String formTagName = FormIdExtractor.extract(source);
+            elementText = SubmitButtonFinder.find(currentPage, formTagName, source).text();
+        } catch (ElementNotFoundException e) {
+            elementText = "*BUTTON_NOT_FOUND";
+        }
+        if (elementText.isEmpty()) {
+            elementText = "*BUTTON_HAS_NO_NAME*";
         }
         return String.format("(id:'%s', value:'%s')", source, elementText);
     }

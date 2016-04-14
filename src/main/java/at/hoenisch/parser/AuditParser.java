@@ -28,8 +28,6 @@ public class AuditParser {
 
 
         for (File file : dirs) {
-//            file = new File("/var/folders/mr/jqcpf4md0_v3dtqq6_6_3sy8l26xks/T/auditgraph26859214901512840871460475648386201000");
-            System.out.println(String.format("NEW FILE: %s \n", file.getAbsoluteFile()));
             String content = FileUtils.readFileToString(file);
             try {
                 Gson gson = new Gson();
@@ -43,12 +41,12 @@ public class AuditParser {
                 // get current user
                 String currentUser = firstAuditEntry.getCurrentUser();
                 if (firstAuditEntry.isAjaxUpdate()) {
-                    System.err.println("First page was a ajax request, log file is invalid or currupt");
+                    System.err.println("First page was a ajax request, log file is invalid or corrupt");
                     continue;
                 }
 
                 Document currentPage = Jsoup.parse(firstAuditEntry.getResponse());
-
+//                System.out.println(currentPage);
                 for (AuditEntry auditEntry : auditEntries) {
 
                     //timestamp of this entry, i.e., when did this happen
@@ -58,8 +56,8 @@ public class AuditParser {
                         printAction(currentUser, message, timestamp);
                         continue;
                     }
-                    String message = extract(auditEntry, currentPage);
 
+                    String message = extract(auditEntry, currentPage);
                     printAction(currentUser, message, timestamp);
 
                     currentPage = PartialResponseUpdater.updatePage(currentPage, auditEntry.getResponse());
