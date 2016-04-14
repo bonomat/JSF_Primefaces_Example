@@ -12,8 +12,8 @@
 hs_err_pid*
 
 *.iml
-.idea
-.settings
-target/*
+*.idea
+*.settings
+*/target/*
 
 rebel.xml
