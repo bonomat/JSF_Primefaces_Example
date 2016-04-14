@@ -46,7 +46,6 @@ public class AuditParser {
                 }
 
                 Document currentPage = Jsoup.parse(firstAuditEntry.getResponse());
-//                System.out.println(currentPage);
                 for (AuditEntry auditEntry : auditEntries) {
 
                     //timestamp of this entry, i.e., when did this happen
