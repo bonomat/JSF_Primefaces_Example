@@ -16,29 +16,7 @@ import static org.junit.Assert.assertFalse;
 /**
  * Created by Philipp Hoenisch on 13/04/16.
  */
-public class PartialResponseUpdaterTest {
-
-
-    private static Document mainDocument;
-    private static String validPartialResponse;
-    private static String inValidPartialResponse;
-    private static String secondValidPartialResponse;
-    private static String invalidContent;
-
-    @BeforeClass
-    public static void loadSamplePage() throws IOException {
-        ClassLoader classLoader = PartialResponseUpdaterTest.class.getClassLoader();
-        String samplePage = IOUtils.toString(classLoader.getResourceAsStream("sample-page.xhtml"), "UTF-8");
-        validPartialResponse = IOUtils.toString(classLoader.getResourceAsStream("partial-update-valid.xml"), "UTF-8");
-        inValidPartialResponse = IOUtils.toString(classLoader.getResourceAsStream("partial-update-invalid.xml"),
-                "UTF-8");
-        secondValidPartialResponse = IOUtils.toString(classLoader.getResourceAsStream("partial-update-valid-two.xml"),
-                "UTF-8");
-        invalidContent = IOUtils.toString(classLoader.getResourceAsStream("partial-update-invalid-content.xml"),
-                "UTF-8");
-        mainDocument = Jsoup.parse(samplePage);
-
-    }
+public class PartialResponseUpdaterTest extends AbstractAuditParserTest{
 
     @Test
     public void updatePageValidPartialResponse() throws Exception {
